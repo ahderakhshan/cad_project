@@ -8,7 +8,7 @@ use IEEE.numeric_std.all;
 
 entity alu is
 	port( input : in std_logic_vector(40 downto 0);
-			output: out std_logic_vector(31 downto 0));
+			output: out std_logic_vector(63 downto 0));
 end alu;
 
 architecture Behavioral of alu is
@@ -48,11 +48,7 @@ process (input) begin
 			--only power of 2 should be check
 		elsif (first_operator="100") then
 			--tavan
-			for i in 1 to 100 loop
-				if (i <= signed(second_num)) then
-					power_result_1 <=  std_logic_vector(signed(power_result_1) * signed(first_num))(31 downto 0);
-				end if;
-			end loop;
+			
 		elsif (first_operator="101") then
 			--logaritm
 		elsif (first_operator="110") then
@@ -87,8 +83,28 @@ process (input) begin
 			end loop;
 		end if;
 		-------------------------------
-		output(0)<=power_result_1(0);
-		--output(1)<=second_result(1);
+		if (second_operator="000") then
+			output(31 downto 0) <= std_logic_vector(signed(first_result) + signed(second_result));
+		elsif (second_operator="001") then
+			output(31 downto 0) <= std_logic_vector(signed(first_result) - signed(second_result));
+		elsif (second_operator="010") then
+			output <=std_logic_vector(signed(first_result) * signed(second_result));
+		elsif (second_operator="011") then
+			output(31 downto 0)<=std_logic_vector(signed(first_result) / signed(second_result));
+			--only power of 2 should be check
+		elsif (second_operator="100") then
+			--power
+			
+		elsif (second_operator="101") then
+			--logaritm
+		elsif (second_operator="110") then
+			--jazr
+			for z in 1 to 100 loop
+				if ( z*z <= (signed(second_result)/2)) then
+					output(31 downto 0)<= std_logic_vector(to_signed(z,32));
+				end if;
+			end loop;
+		end if;
 end process;
 end Behavioral;
 
