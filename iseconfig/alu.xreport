@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-07-07T23:50:54</DateModified>
+  <DateModified>2022-07-08T15:10:22</DateModified>
   <ModuleName>alu</ModuleName>
   <SummaryTimeStamp>2022-07-07T23:50:45</SummaryTimeStamp>
-  <SavedFilePath>E:/cadproj/finall/iseconfig/alu.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/cadproj/finall\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Hessam-PC/Desktop/CAD Project/cad_project/iseconfig/alu.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Hessam-PC/Desktop/CAD Project/cad_project\</ImplementationReportsDirectory>
   <DateInitialized>2022-07-06T23:09:02</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

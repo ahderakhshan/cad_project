@@ -27,6 +27,7 @@ signal power_result_1:std_logic_vector(31 downto 0);
 signal power_result_2:std_logic_vector(45 downto 0);
 signal one:std_logic_vector(8 downto 0):="000000001";
 signal endd:std_logic_vector(8 downto 0):="010000000";
+signal temp: std_logic_vector(31 downto 0);
 begin
 process (input) begin
 		first_operator <= input(40 downto 38);
@@ -42,13 +43,21 @@ process (input) begin
 		elsif (first_operator="001") then
 			first_result(7 downto 0) <= std_logic_vector(signed(first_num) - signed(second_num));
 		elsif (first_operator="010") then
-			first_result(15 downto 0) <=std_logic_vector(signed(first_num) * signed(second_num));
+			first_result(15 downto 0) <= std_logic_vector(signed(first_num) * signed(second_num));
 		elsif (first_operator="011") then
-			first_result(7 downto 0)<=std_logic_vector(signed(first_num) / signed(second_num));
+			first_result(7 downto 0) <= std_logic_vector(signed(first_num) / signed(second_num));
 			--only power of 2 should be check
 		elsif (first_operator="100") then
 			--tavan
-			
+			if (signed(second_num) == "00000000") then
+				temp := "00000000000000000000000000000001";
+			else
+				temp := signed(first_num);
+				for i in 2 to signed(second_num) loop
+					temp <= temp * signed(first_num);
+				end loop;
+			end if;
+			first_result <= temp;
 		elsif (first_operator="101") then
 			--logaritm
 		elsif (first_operator="110") then
@@ -65,13 +74,21 @@ process (input) begin
 		elsif (third_operator="001") then
 			second_result(7 downto 0) <= std_logic_vector(signed(third_num) - signed(forth_num));
 		elsif (third_operator="010") then
-			second_result(15 downto 0) <=std_logic_vector(signed(third_num) * signed(forth_num));
+			second_result(15 downto 0) <= std_logic_vector(signed(third_num) * signed(forth_num));
 		elsif (third_operator="011") then
-			second_result(7 downto 0)<=std_logic_vector(signed(third_num) / signed(forth_num));
+			second_result(7 downto 0) <= std_logic_vector(signed(third_num) / signed(forth_num));
 			--only power of 2 should be check
 		elsif (third_operator="100") then
 			--power
-			
+			if (signed(forth_num) == "00000000") then
+				temp := "00000000000000000000000000000001";
+			else
+				temp := signed(third_num);
+				for i in 2 to signed(forth_num) loop
+					temp <= temp * signed(third_num);
+				end loop;
+			end if;
+			second_result <= temp;
 		elsif (third_operator="101") then
 			--logaritm
 		elsif (third_operator="110") then
@@ -88,13 +105,21 @@ process (input) begin
 		elsif (second_operator="001") then
 			output(31 downto 0) <= std_logic_vector(signed(first_result) - signed(second_result));
 		elsif (second_operator="010") then
-			output <=std_logic_vector(signed(first_result) * signed(second_result));
+			output <= std_logic_vector(signed(first_result) * signed(second_result));
 		elsif (second_operator="011") then
-			output(31 downto 0)<=std_logic_vector(signed(first_result) / signed(second_result));
+			output(31 downto 0) <= std_logic_vector(signed(first_result) / signed(second_result));
 			--only power of 2 should be check
 		elsif (second_operator="100") then
 			--power
-			
+			if (signed(second_result) == "00000000") then
+				temp := "00000000000000000000000000000001";
+			else
+				temp := signed(first_result);
+				for i in 2 to signed(second_result) loop
+					temp <= temp * signed(first_result);
+				end loop;
+			end if;
+			output(31 downto 0) <= temp;
 		elsif (second_operator="101") then
 			--logaritm
 		elsif (second_operator="110") then
