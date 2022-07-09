@@ -49,11 +49,11 @@ process (input) begin
 			--only power of 2 should be check
 		elsif (first_operator="100") then
 			--tavan
-			if (signed(second_num) == "00000000") then
-				temp := "00000000000000000000000000000001";
+			if (signed(second_num) = "00000000") then
+				temp <= "00000000000000000000000000000001";
 			else
-				temp := signed(first_num);
-				for i in 2 to signed(second_num) loop
+				temp <= std_logic_vector(signed(first_num));
+				for i in 2 to to_integer(signed(second_num)) loop
 					temp <= temp * signed(first_num);
 				end loop;
 			end if;
@@ -80,11 +80,11 @@ process (input) begin
 			--only power of 2 should be check
 		elsif (third_operator="100") then
 			--power
-			if (signed(forth_num) == "00000000") then
-				temp := "00000000000000000000000000000001";
+			if (signed(forth_num) = "00000000") then
+				temp <= "00000000000000000000000000000001";
 			else
-				temp := signed(third_num);
-				for i in 2 to signed(forth_num) loop
+				temp <= std_logic_vector(signed(third_num));
+				for i in 2 to to_integer(signed(forth_num)) loop
 					temp <= temp * signed(third_num);
 				end loop;
 			end if;
@@ -111,11 +111,11 @@ process (input) begin
 			--only power of 2 should be check
 		elsif (second_operator="100") then
 			--power
-			if (signed(second_result) == "00000000") then
-				temp := "00000000000000000000000000000001";
+			if (signed(second_result) = "00000000") then
+				temp <= "00000000000000000000000000000001";
 			else
-				temp := signed(first_result);
-				for i in 2 to signed(second_result) loop
+				temp <= std_logic_vector(signed(first_result));
+				for i in 2 to to_integer(signed(second_result)) loop
 					temp <= temp * signed(first_result);
 				end loop;
 			end if;
