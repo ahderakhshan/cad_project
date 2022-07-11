@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -129,14 +129,11 @@ WARNING:HDLCompiler:92 - "E:\cadproj\finall\alu.vhd" Line 165: second_operator s
 Synthesizing Unit <alu>.
     Related source file is "E:\cadproj\finall\alu.vhd".
     Found 8-bit adder for signal <first_num[7]_second_num[7]_add_8_OUT> created at line 41.
-    Found 7-bit adder for signal <second_num[7]_GND_4_o_add_232_OUT> created at line 78.
-    Found 8-bit adder for signal <third_num[7]_forth_num[7]_add_351_OUT> created at line 85.
-    Found 7-bit adder for signal <forth_num[7]_GND_4_o_add_683_OUT> created at line 122.
-    Found 8-bit adder for signal <first_result[7]_second_result[7]_add_694_OUT> created at line 132.
-    Found 7-bit adder for signal <second_result[7]_GND_4_o_add_1026_OUT> created at line 168.
+    Found 8-bit adder for signal <third_num[7]_forth_num[7]_add_251_OUT> created at line 85.
+    Found 8-bit adder for signal <first_result[7]_second_result[7]_add_494_OUT> created at line 132.
     Found 8-bit subtractor for signal <first_num[7]_second_num[7]_sub_11_OUT<7:0>> created at line 43.
-    Found 8-bit subtractor for signal <third_num[7]_forth_num[7]_sub_354_OUT<7:0>> created at line 87.
-    Found 8-bit subtractor for signal <first_result[7]_second_result[7]_sub_697_OUT<7:0>> created at line 134.
+    Found 8-bit subtractor for signal <third_num[7]_forth_num[7]_sub_254_OUT<7:0>> created at line 87.
+    Found 8-bit subtractor for signal <first_result[7]_second_result[7]_sub_497_OUT<7:0>> created at line 134.
     Found 1-bit 7-to-1 multiplexer for signal <first_result[7]_first_num[7]_MUX_350_o> created at line 39.
     Found 1-bit 7-to-1 multiplexer for signal <first_result[7]_first_num[7]_MUX_467_o> created at line 39.
     Found 1-bit 7-to-1 multiplexer for signal <first_result[7]_first_num[7]_MUX_584_o> created at line 39.
@@ -195,36 +192,35 @@ WARNING:Xst:737 - Found 1-bit latch for signal <first_result<7>>. Latches may be
     Found 9-bit comparator greater for signal <GND_4_o_second_num[7]_LessThan_31_o> created at line 70
     Found 10-bit comparator greater for signal <GND_4_o_second_num[7]_LessThan_33_o> created at line 72
     Found 8-bit comparator lessequal for signal <n0058> created at line 78
-    Found 8-bit comparator greater for signal <first_result[7]_GND_4_o_MUX_1055_o> created at line 78
+    Found 8-bit comparator lessequal for signal <n0060> created at line 78
     Found 8-bit comparator lessequal for signal <n0062> created at line 78
     Found 8-bit comparator lessequal for signal <n0064> created at line 78
     Found 8-bit comparator lessequal for signal <n0066> created at line 78
     Found 8-bit comparator lessequal for signal <n0068> created at line 78
     Found 8-bit comparator lessequal for signal <n0070> created at line 78
-    Found 8-bit comparator lessequal for signal <n0072> created at line 78
-    Found 8-bit comparator lessequal for signal <n0074> created at line 78
-    Found 8-bit comparator lessequal for signal <n0076> created at line 78
-    Found 8-bit comparator lessequal for signal <n0078> created at line 78
-    Found 9-bit comparator lessequal for signal <n0080> created at line 78
-    Found 9-bit comparator lessequal for signal <n0082> created at line 78
-    Found 9-bit comparator lessequal for signal <n0084> created at line 78
-    Found 9-bit comparator lessequal for signal <n0086> created at line 78
+    Found 9-bit comparator lessequal for signal <n0072> created at line 78
+    Found 9-bit comparator lessequal for signal <n0074> created at line 78
+    Found 9-bit comparator lessequal for signal <n0076> created at line 78
+    Found 9-bit comparator lessequal for signal <n0078> created at line 78
+    Found 10-bit comparator lessequal for signal <n0082> created at line 78
+    Found 10-bit comparator lessequal for signal <n0084> created at line 78
+    Found 10-bit comparator lessequal for signal <n0086> created at line 78
     Found 10-bit comparator lessequal for signal <n0088> created at line 78
     Found 10-bit comparator lessequal for signal <n0090> created at line 78
     Found 10-bit comparator lessequal for signal <n0092> created at line 78
-    Found 10-bit comparator lessequal for signal <n0094> created at line 78
-    Found 10-bit comparator lessequal for signal <n0096> created at line 78
-    Found 10-bit comparator lessequal for signal <n0098> created at line 78
-    Found 10-bit comparator lessequal for signal <n0100> created at line 78
+    Found 11-bit comparator lessequal for signal <n0094> created at line 78
+    Found 11-bit comparator lessequal for signal <n0096> created at line 78
+    Found 11-bit comparator lessequal for signal <n0098> created at line 78
+    Found 11-bit comparator lessequal for signal <n0100> created at line 78
     Found 11-bit comparator lessequal for signal <n0102> created at line 78
     Found 11-bit comparator lessequal for signal <n0104> created at line 78
     Found 11-bit comparator lessequal for signal <n0106> created at line 78
     Found 11-bit comparator lessequal for signal <n0108> created at line 78
     Found 11-bit comparator lessequal for signal <n0110> created at line 78
-    Found 11-bit comparator lessequal for signal <n0112> created at line 78
-    Found 11-bit comparator lessequal for signal <n0114> created at line 78
-    Found 11-bit comparator lessequal for signal <n0116> created at line 78
-    Found 11-bit comparator lessequal for signal <n0118> created at line 78
+    Found 12-bit comparator lessequal for signal <n0112> created at line 78
+    Found 12-bit comparator lessequal for signal <n0114> created at line 78
+    Found 12-bit comparator lessequal for signal <n0116> created at line 78
+    Found 12-bit comparator lessequal for signal <n0118> created at line 78
     Found 12-bit comparator lessequal for signal <n0120> created at line 78
     Found 12-bit comparator lessequal for signal <n0122> created at line 78
     Found 12-bit comparator lessequal for signal <n0124> created at line 78
@@ -235,10 +231,10 @@ WARNING:Xst:737 - Found 1-bit latch for signal <first_result<7>>. Latches may be
     Found 12-bit comparator lessequal for signal <n0134> created at line 78
     Found 12-bit comparator lessequal for signal <n0136> created at line 78
     Found 12-bit comparator lessequal for signal <n0138> created at line 78
-    Found 12-bit comparator lessequal for signal <n0140> created at line 78
-    Found 12-bit comparator lessequal for signal <n0142> created at line 78
-    Found 12-bit comparator lessequal for signal <n0144> created at line 78
-    Found 12-bit comparator lessequal for signal <n0146> created at line 78
+    Found 13-bit comparator lessequal for signal <n0140> created at line 78
+    Found 13-bit comparator lessequal for signal <n0142> created at line 78
+    Found 13-bit comparator lessequal for signal <n0144> created at line 78
+    Found 13-bit comparator lessequal for signal <n0146> created at line 78
     Found 13-bit comparator lessequal for signal <n0148> created at line 78
     Found 13-bit comparator lessequal for signal <n0150> created at line 78
     Found 13-bit comparator lessequal for signal <n0152> created at line 78
@@ -253,10 +249,11 @@ WARNING:Xst:737 - Found 1-bit latch for signal <first_result<7>>. Latches may be
     Found 13-bit comparator lessequal for signal <n0170> created at line 78
     Found 13-bit comparator lessequal for signal <n0172> created at line 78
     Found 13-bit comparator lessequal for signal <n0174> created at line 78
-    Found 13-bit comparator lessequal for signal <n0176> created at line 78
-    Found 13-bit comparator lessequal for signal <n0178> created at line 78
-    Found 13-bit comparator lessequal for signal <n0180> created at line 78
-    Found 13-bit comparator lessequal for signal <n0182> created at line 78
+    Found 14-bit comparator lessequal for signal <n0176> created at line 78
+    Found 14-bit comparator lessequal for signal <n0178> created at line 78
+    Found 14-bit comparator lessequal for signal <n0180> created at line 78
+    Found 14-bit comparator lessequal for signal <n0182> created at line 78
+    Found 14-bit comparator lessequal for signal <n0184> created at line 78
     Found 14-bit comparator lessequal for signal <n0186> created at line 78
     Found 14-bit comparator lessequal for signal <n0188> created at line 78
     Found 14-bit comparator lessequal for signal <n0190> created at line 78
@@ -279,75 +276,74 @@ WARNING:Xst:737 - Found 1-bit latch for signal <first_result<7>>. Latches may be
     Found 14-bit comparator lessequal for signal <n0224> created at line 78
     Found 14-bit comparator lessequal for signal <n0226> created at line 78
     Found 14-bit comparator lessequal for signal <n0228> created at line 78
-    Found 14-bit comparator lessequal for signal <n0230> created at line 78
-    Found 14-bit comparator lessequal for signal <n0232> created at line 78
-    Found 14-bit comparator lessequal for signal <n0234> created at line 78
-    Found 14-bit comparator lessequal for signal <n0236> created at line 78
-    Found 14-bit comparator lessequal for signal <n0238> created at line 78
+    Found 15-bit comparator lessequal for signal <n0230> created at line 78
+    Found 15-bit comparator lessequal for signal <n0232> created at line 78
+    Found 15-bit comparator lessequal for signal <n0234> created at line 78
+    Found 15-bit comparator lessequal for signal <n0236> created at line 78
+    Found 15-bit comparator lessequal for signal <n0238> created at line 78
     Found 15-bit comparator lessequal for signal <n0240> created at line 78
     Found 15-bit comparator lessequal for signal <n0242> created at line 78
     Found 15-bit comparator lessequal for signal <n0244> created at line 78
     Found 15-bit comparator lessequal for signal <n0246> created at line 78
     Found 15-bit comparator lessequal for signal <n0248> created at line 78
-    Found 15-bit comparator lessequal for signal <n0250> created at line 78
-    Found 15-bit comparator lessequal for signal <n0252> created at line 78
-    Found 15-bit comparator lessequal for signal <n0254> created at line 78
-    Found 15-bit comparator lessequal for signal <n0256> created at line 78
-    Found 15-bit comparator lessequal for signal <n0258> created at line 78
-    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_360_o> created at line 100
-    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_362_o> created at line 102
-    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_364_o> created at line 104
-    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_366_o> created at line 106
-    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_368_o> created at line 108
-    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_370_o> created at line 110
-    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_372_o> created at line 112
-    Found 9-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_374_o> created at line 114
-    Found 10-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_376_o> created at line 116
+    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_260_o> created at line 100
+    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_262_o> created at line 102
+    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_264_o> created at line 104
+    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_266_o> created at line 106
+    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_268_o> created at line 108
+    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_270_o> created at line 110
+    Found 8-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_272_o> created at line 112
+    Found 9-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_274_o> created at line 114
+    Found 10-bit comparator greater for signal <GND_4_o_forth_num[7]_LessThan_276_o> created at line 116
+    Found 8-bit comparator lessequal for signal <n0301> created at line 122
+    Found 8-bit comparator lessequal for signal <n0303> created at line 122
+    Found 8-bit comparator lessequal for signal <n0305> created at line 122
+    Found 8-bit comparator lessequal for signal <n0307> created at line 122
+    Found 8-bit comparator lessequal for signal <n0309> created at line 122
     Found 8-bit comparator lessequal for signal <n0311> created at line 122
-    Found 8-bit comparator greater for signal <second_result[7]_GND_4_o_MUX_1991_o> created at line 122
-    Found 8-bit comparator lessequal for signal <n0315> created at line 122
-    Found 8-bit comparator lessequal for signal <n0317> created at line 122
-    Found 8-bit comparator lessequal for signal <n0319> created at line 122
-    Found 8-bit comparator lessequal for signal <n0321> created at line 122
-    Found 8-bit comparator lessequal for signal <n0323> created at line 122
-    Found 8-bit comparator lessequal for signal <n0325> created at line 122
-    Found 8-bit comparator lessequal for signal <n0327> created at line 122
-    Found 8-bit comparator lessequal for signal <n0329> created at line 122
-    Found 8-bit comparator lessequal for signal <n0331> created at line 122
-    Found 9-bit comparator lessequal for signal <n0333> created at line 122
-    Found 9-bit comparator lessequal for signal <n0335> created at line 122
-    Found 9-bit comparator lessequal for signal <n0337> created at line 122
-    Found 9-bit comparator lessequal for signal <n0339> created at line 122
-    Found 10-bit comparator lessequal for signal <n0341> created at line 122
-    Found 10-bit comparator lessequal for signal <n0343> created at line 122
-    Found 10-bit comparator lessequal for signal <n0345> created at line 122
-    Found 10-bit comparator lessequal for signal <n0347> created at line 122
-    Found 10-bit comparator lessequal for signal <n0349> created at line 122
-    Found 10-bit comparator lessequal for signal <n0351> created at line 122
-    Found 10-bit comparator lessequal for signal <n0353> created at line 122
-    Found 11-bit comparator lessequal for signal <n0355> created at line 122
-    Found 11-bit comparator lessequal for signal <n0357> created at line 122
-    Found 11-bit comparator lessequal for signal <n0359> created at line 122
-    Found 11-bit comparator lessequal for signal <n0361> created at line 122
-    Found 11-bit comparator lessequal for signal <n0363> created at line 122
-    Found 11-bit comparator lessequal for signal <n0365> created at line 122
-    Found 11-bit comparator lessequal for signal <n0367> created at line 122
-    Found 11-bit comparator lessequal for signal <n0369> created at line 122
-    Found 11-bit comparator lessequal for signal <n0371> created at line 122
+    Found 8-bit comparator lessequal for signal <n0313> created at line 122
+    Found 9-bit comparator lessequal for signal <n0315> created at line 122
+    Found 9-bit comparator lessequal for signal <n0317> created at line 122
+    Found 9-bit comparator lessequal for signal <n0319> created at line 122
+    Found 9-bit comparator lessequal for signal <n0321> created at line 122
+    Found 10-bit comparator lessequal for signal <n0325> created at line 122
+    Found 10-bit comparator lessequal for signal <n0327> created at line 122
+    Found 10-bit comparator lessequal for signal <n0329> created at line 122
+    Found 10-bit comparator lessequal for signal <n0331> created at line 122
+    Found 10-bit comparator lessequal for signal <n0333> created at line 122
+    Found 10-bit comparator lessequal for signal <n0335> created at line 122
+    Found 11-bit comparator lessequal for signal <n0337> created at line 122
+    Found 11-bit comparator lessequal for signal <n0339> created at line 122
+    Found 11-bit comparator lessequal for signal <n0341> created at line 122
+    Found 11-bit comparator lessequal for signal <n0343> created at line 122
+    Found 11-bit comparator lessequal for signal <n0345> created at line 122
+    Found 11-bit comparator lessequal for signal <n0347> created at line 122
+    Found 11-bit comparator lessequal for signal <n0349> created at line 122
+    Found 11-bit comparator lessequal for signal <n0351> created at line 122
+    Found 11-bit comparator lessequal for signal <n0353> created at line 122
+    Found 12-bit comparator lessequal for signal <n0355> created at line 122
+    Found 12-bit comparator lessequal for signal <n0357> created at line 122
+    Found 12-bit comparator lessequal for signal <n0359> created at line 122
+    Found 12-bit comparator lessequal for signal <n0361> created at line 122
+    Found 12-bit comparator lessequal for signal <n0363> created at line 122
+    Found 12-bit comparator lessequal for signal <n0365> created at line 122
+    Found 12-bit comparator lessequal for signal <n0367> created at line 122
+    Found 12-bit comparator lessequal for signal <n0369> created at line 122
+    Found 12-bit comparator lessequal for signal <n0371> created at line 122
     Found 12-bit comparator lessequal for signal <n0373> created at line 122
     Found 12-bit comparator lessequal for signal <n0375> created at line 122
     Found 12-bit comparator lessequal for signal <n0377> created at line 122
     Found 12-bit comparator lessequal for signal <n0379> created at line 122
     Found 12-bit comparator lessequal for signal <n0381> created at line 122
-    Found 12-bit comparator lessequal for signal <n0383> created at line 122
-    Found 12-bit comparator lessequal for signal <n0385> created at line 122
-    Found 12-bit comparator lessequal for signal <n0387> created at line 122
-    Found 12-bit comparator lessequal for signal <n0389> created at line 122
-    Found 12-bit comparator lessequal for signal <n0391> created at line 122
-    Found 12-bit comparator lessequal for signal <n0393> created at line 122
-    Found 12-bit comparator lessequal for signal <n0395> created at line 122
-    Found 12-bit comparator lessequal for signal <n0397> created at line 122
-    Found 12-bit comparator lessequal for signal <n0399> created at line 122
+    Found 13-bit comparator lessequal for signal <n0383> created at line 122
+    Found 13-bit comparator lessequal for signal <n0385> created at line 122
+    Found 13-bit comparator lessequal for signal <n0387> created at line 122
+    Found 13-bit comparator lessequal for signal <n0389> created at line 122
+    Found 13-bit comparator lessequal for signal <n0391> created at line 122
+    Found 13-bit comparator lessequal for signal <n0393> created at line 122
+    Found 13-bit comparator lessequal for signal <n0395> created at line 122
+    Found 13-bit comparator lessequal for signal <n0397> created at line 122
+    Found 13-bit comparator lessequal for signal <n0399> created at line 122
     Found 13-bit comparator lessequal for signal <n0401> created at line 122
     Found 13-bit comparator lessequal for signal <n0403> created at line 122
     Found 13-bit comparator lessequal for signal <n0405> created at line 122
@@ -357,15 +353,15 @@ WARNING:Xst:737 - Found 1-bit latch for signal <first_result<7>>. Latches may be
     Found 13-bit comparator lessequal for signal <n0413> created at line 122
     Found 13-bit comparator lessequal for signal <n0415> created at line 122
     Found 13-bit comparator lessequal for signal <n0417> created at line 122
-    Found 13-bit comparator lessequal for signal <n0419> created at line 122
-    Found 13-bit comparator lessequal for signal <n0421> created at line 122
-    Found 13-bit comparator lessequal for signal <n0423> created at line 122
-    Found 13-bit comparator lessequal for signal <n0425> created at line 122
-    Found 13-bit comparator lessequal for signal <n0427> created at line 122
-    Found 13-bit comparator lessequal for signal <n0429> created at line 122
-    Found 13-bit comparator lessequal for signal <n0431> created at line 122
-    Found 13-bit comparator lessequal for signal <n0433> created at line 122
-    Found 13-bit comparator lessequal for signal <n0435> created at line 122
+    Found 14-bit comparator lessequal for signal <n0419> created at line 122
+    Found 14-bit comparator lessequal for signal <n0421> created at line 122
+    Found 14-bit comparator lessequal for signal <n0423> created at line 122
+    Found 14-bit comparator lessequal for signal <n0425> created at line 122
+    Found 14-bit comparator lessequal for signal <n0427> created at line 122
+    Found 14-bit comparator lessequal for signal <n0429> created at line 122
+    Found 14-bit comparator lessequal for signal <n0431> created at line 122
+    Found 14-bit comparator lessequal for signal <n0433> created at line 122
+    Found 14-bit comparator lessequal for signal <n0435> created at line 122
     Found 14-bit comparator lessequal for signal <n0437> created at line 122
     Found 14-bit comparator lessequal for signal <n0439> created at line 122
     Found 14-bit comparator lessequal for signal <n0441> created at line 122
@@ -384,97 +380,97 @@ WARNING:Xst:737 - Found 1-bit latch for signal <first_result<7>>. Latches may be
     Found 14-bit comparator lessequal for signal <n0467> created at line 122
     Found 14-bit comparator lessequal for signal <n0469> created at line 122
     Found 14-bit comparator lessequal for signal <n0471> created at line 122
-    Found 14-bit comparator lessequal for signal <n0473> created at line 122
-    Found 14-bit comparator lessequal for signal <n0475> created at line 122
-    Found 14-bit comparator lessequal for signal <n0477> created at line 122
-    Found 14-bit comparator lessequal for signal <n0479> created at line 122
-    Found 14-bit comparator lessequal for signal <n0481> created at line 122
-    Found 14-bit comparator lessequal for signal <n0483> created at line 122
-    Found 14-bit comparator lessequal for signal <n0485> created at line 122
-    Found 14-bit comparator lessequal for signal <n0487> created at line 122
-    Found 14-bit comparator lessequal for signal <n0489> created at line 122
+    Found 15-bit comparator lessequal for signal <n0473> created at line 122
+    Found 15-bit comparator lessequal for signal <n0475> created at line 122
+    Found 15-bit comparator lessequal for signal <n0477> created at line 122
+    Found 15-bit comparator lessequal for signal <n0479> created at line 122
+    Found 15-bit comparator lessequal for signal <n0481> created at line 122
+    Found 15-bit comparator lessequal for signal <n0483> created at line 122
+    Found 15-bit comparator lessequal for signal <n0485> created at line 122
+    Found 15-bit comparator lessequal for signal <n0487> created at line 122
+    Found 15-bit comparator lessequal for signal <n0489> created at line 122
     Found 15-bit comparator lessequal for signal <n0491> created at line 122
-    Found 15-bit comparator lessequal for signal <n0493> created at line 122
-    Found 15-bit comparator lessequal for signal <n0495> created at line 122
-    Found 15-bit comparator lessequal for signal <n0497> created at line 122
-    Found 15-bit comparator lessequal for signal <n0499> created at line 122
-    Found 15-bit comparator lessequal for signal <n0501> created at line 122
-    Found 15-bit comparator lessequal for signal <n0503> created at line 122
-    Found 15-bit comparator lessequal for signal <n0505> created at line 122
-    Found 15-bit comparator lessequal for signal <n0507> created at line 122
-    Found 15-bit comparator lessequal for signal <n0511> created at line 122
-    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_703_o> created at line 146
-    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_705_o> created at line 148
-    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_707_o> created at line 150
-    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_709_o> created at line 152
-    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_711_o> created at line 154
-    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_713_o> created at line 156
-    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_715_o> created at line 158
-    Found 9-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_717_o> created at line 160
-    Found 10-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_719_o> created at line 162
-    Found 8-bit comparator lessequal for signal <n2022> created at line 168
-    Found 8-bit comparator greater for signal <output[7]_GND_4_o_MUX_2927_o> created at line 168
-    Found 8-bit comparator lessequal for signal <n2026> created at line 168
-    Found 8-bit comparator lessequal for signal <n2028> created at line 168
-    Found 8-bit comparator lessequal for signal <n2030> created at line 168
-    Found 8-bit comparator lessequal for signal <n2032> created at line 168
-    Found 8-bit comparator lessequal for signal <n2034> created at line 168
-    Found 8-bit comparator lessequal for signal <n2036> created at line 168
-    Found 8-bit comparator lessequal for signal <n2038> created at line 168
-    Found 8-bit comparator lessequal for signal <n2040> created at line 168
-    Found 8-bit comparator lessequal for signal <n2042> created at line 168
-    Found 9-bit comparator lessequal for signal <n2044> created at line 168
-    Found 9-bit comparator lessequal for signal <n2046> created at line 168
-    Found 9-bit comparator lessequal for signal <n2048> created at line 168
-    Found 9-bit comparator lessequal for signal <n2050> created at line 168
-    Found 10-bit comparator lessequal for signal <n2052> created at line 168
-    Found 10-bit comparator lessequal for signal <n2054> created at line 168
-    Found 10-bit comparator lessequal for signal <n2056> created at line 168
-    Found 10-bit comparator lessequal for signal <n2058> created at line 168
-    Found 10-bit comparator lessequal for signal <n2060> created at line 168
-    Found 10-bit comparator lessequal for signal <n2062> created at line 168
-    Found 10-bit comparator lessequal for signal <n2064> created at line 168
-    Found 11-bit comparator lessequal for signal <n2066> created at line 168
-    Found 11-bit comparator lessequal for signal <n2068> created at line 168
-    Found 11-bit comparator lessequal for signal <n2070> created at line 168
-    Found 11-bit comparator lessequal for signal <n2072> created at line 168
-    Found 11-bit comparator lessequal for signal <n2074> created at line 168
-    Found 11-bit comparator lessequal for signal <n2076> created at line 168
-    Found 11-bit comparator lessequal for signal <n2078> created at line 168
-    Found 11-bit comparator lessequal for signal <n2080> created at line 168
-    Found 11-bit comparator lessequal for signal <n2082> created at line 168
-    Found 12-bit comparator lessequal for signal <n2084> created at line 168
-    Found 12-bit comparator lessequal for signal <n2086> created at line 168
-    Found 12-bit comparator lessequal for signal <n2088> created at line 168
-    Found 12-bit comparator lessequal for signal <n2090> created at line 168
-    Found 12-bit comparator lessequal for signal <n2092> created at line 168
-    Found 12-bit comparator lessequal for signal <n2094> created at line 168
-    Found 12-bit comparator lessequal for signal <n2096> created at line 168
-    Found 12-bit comparator lessequal for signal <n2098> created at line 168
-    Found 12-bit comparator lessequal for signal <n2100> created at line 168
-    Found 12-bit comparator lessequal for signal <n2102> created at line 168
-    Found 12-bit comparator lessequal for signal <n2104> created at line 168
-    Found 12-bit comparator lessequal for signal <n2106> created at line 168
-    Found 12-bit comparator lessequal for signal <n2108> created at line 168
-    Found 12-bit comparator lessequal for signal <n2110> created at line 168
+    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_503_o> created at line 146
+    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_505_o> created at line 148
+    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_507_o> created at line 150
+    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_509_o> created at line 152
+    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_511_o> created at line 154
+    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_513_o> created at line 156
+    Found 8-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_515_o> created at line 158
+    Found 9-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_517_o> created at line 160
+    Found 10-bit comparator greater for signal <GND_4_o_second_result[7]_LessThan_519_o> created at line 162
+    Found 8-bit comparator lessequal for signal <n2002> created at line 168
+    Found 8-bit comparator lessequal for signal <n2004> created at line 168
+    Found 8-bit comparator lessequal for signal <n2006> created at line 168
+    Found 8-bit comparator lessequal for signal <n2008> created at line 168
+    Found 8-bit comparator lessequal for signal <n2010> created at line 168
+    Found 8-bit comparator lessequal for signal <n2012> created at line 168
+    Found 8-bit comparator lessequal for signal <n2014> created at line 168
+    Found 9-bit comparator lessequal for signal <n2016> created at line 168
+    Found 9-bit comparator lessequal for signal <n2018> created at line 168
+    Found 9-bit comparator lessequal for signal <n2020> created at line 168
+    Found 9-bit comparator lessequal for signal <n2022> created at line 168
+    Found 10-bit comparator lessequal for signal <n2026> created at line 168
+    Found 10-bit comparator lessequal for signal <n2028> created at line 168
+    Found 10-bit comparator lessequal for signal <n2030> created at line 168
+    Found 10-bit comparator lessequal for signal <n2032> created at line 168
+    Found 10-bit comparator lessequal for signal <n2034> created at line 168
+    Found 10-bit comparator lessequal for signal <n2036> created at line 168
+    Found 11-bit comparator lessequal for signal <n2038> created at line 168
+    Found 11-bit comparator lessequal for signal <n2040> created at line 168
+    Found 11-bit comparator lessequal for signal <n2042> created at line 168
+    Found 11-bit comparator lessequal for signal <n2044> created at line 168
+    Found 11-bit comparator lessequal for signal <n2046> created at line 168
+    Found 11-bit comparator lessequal for signal <n2048> created at line 168
+    Found 11-bit comparator lessequal for signal <n2050> created at line 168
+    Found 11-bit comparator lessequal for signal <n2052> created at line 168
+    Found 11-bit comparator lessequal for signal <n2054> created at line 168
+    Found 12-bit comparator lessequal for signal <n2056> created at line 168
+    Found 12-bit comparator lessequal for signal <n2058> created at line 168
+    Found 12-bit comparator lessequal for signal <n2060> created at line 168
+    Found 12-bit comparator lessequal for signal <n2062> created at line 168
+    Found 12-bit comparator lessequal for signal <n2064> created at line 168
+    Found 12-bit comparator lessequal for signal <n2066> created at line 168
+    Found 12-bit comparator lessequal for signal <n2068> created at line 168
+    Found 12-bit comparator lessequal for signal <n2070> created at line 168
+    Found 12-bit comparator lessequal for signal <n2072> created at line 168
+    Found 12-bit comparator lessequal for signal <n2074> created at line 168
+    Found 12-bit comparator lessequal for signal <n2076> created at line 168
+    Found 12-bit comparator lessequal for signal <n2078> created at line 168
+    Found 12-bit comparator lessequal for signal <n2080> created at line 168
+    Found 12-bit comparator lessequal for signal <n2082> created at line 168
+    Found 13-bit comparator lessequal for signal <n2084> created at line 168
+    Found 13-bit comparator lessequal for signal <n2086> created at line 168
+    Found 13-bit comparator lessequal for signal <n2088> created at line 168
+    Found 13-bit comparator lessequal for signal <n2090> created at line 168
+    Found 13-bit comparator lessequal for signal <n2092> created at line 168
+    Found 13-bit comparator lessequal for signal <n2094> created at line 168
+    Found 13-bit comparator lessequal for signal <n2096> created at line 168
+    Found 13-bit comparator lessequal for signal <n2098> created at line 168
+    Found 13-bit comparator lessequal for signal <n2100> created at line 168
+    Found 13-bit comparator lessequal for signal <n2102> created at line 168
+    Found 13-bit comparator lessequal for signal <n2104> created at line 168
+    Found 13-bit comparator lessequal for signal <n2106> created at line 168
+    Found 13-bit comparator lessequal for signal <n2108> created at line 168
+    Found 13-bit comparator lessequal for signal <n2110> created at line 168
     Found 13-bit comparator lessequal for signal <n2112> created at line 168
     Found 13-bit comparator lessequal for signal <n2114> created at line 168
     Found 13-bit comparator lessequal for signal <n2116> created at line 168
     Found 13-bit comparator lessequal for signal <n2118> created at line 168
-    Found 13-bit comparator lessequal for signal <n2120> created at line 168
-    Found 13-bit comparator lessequal for signal <n2122> created at line 168
-    Found 13-bit comparator lessequal for signal <n2124> created at line 168
-    Found 13-bit comparator lessequal for signal <n2126> created at line 168
-    Found 13-bit comparator lessequal for signal <n2128> created at line 168
-    Found 13-bit comparator lessequal for signal <n2130> created at line 168
-    Found 13-bit comparator lessequal for signal <n2132> created at line 168
-    Found 13-bit comparator lessequal for signal <n2134> created at line 168
-    Found 13-bit comparator lessequal for signal <n2136> created at line 168
-    Found 13-bit comparator lessequal for signal <n2138> created at line 168
-    Found 13-bit comparator lessequal for signal <n2140> created at line 168
-    Found 13-bit comparator lessequal for signal <n2142> created at line 168
-    Found 13-bit comparator lessequal for signal <n2144> created at line 168
-    Found 13-bit comparator lessequal for signal <n2146> created at line 168
+    Found 14-bit comparator lessequal for signal <n2120> created at line 168
+    Found 14-bit comparator lessequal for signal <n2122> created at line 168
+    Found 14-bit comparator lessequal for signal <n2124> created at line 168
+    Found 14-bit comparator lessequal for signal <n2126> created at line 168
+    Found 14-bit comparator lessequal for signal <n2128> created at line 168
+    Found 14-bit comparator lessequal for signal <n2130> created at line 168
+    Found 14-bit comparator lessequal for signal <n2132> created at line 168
+    Found 14-bit comparator lessequal for signal <n2134> created at line 168
+    Found 14-bit comparator lessequal for signal <n2136> created at line 168
+    Found 14-bit comparator lessequal for signal <n2138> created at line 168
+    Found 14-bit comparator lessequal for signal <n2140> created at line 168
+    Found 14-bit comparator lessequal for signal <n2142> created at line 168
+    Found 14-bit comparator lessequal for signal <n2144> created at line 168
+    Found 14-bit comparator lessequal for signal <n2146> created at line 168
     Found 14-bit comparator lessequal for signal <n2148> created at line 168
     Found 14-bit comparator lessequal for signal <n2150> created at line 168
     Found 14-bit comparator lessequal for signal <n2152> created at line 168
@@ -488,34 +484,20 @@ WARNING:Xst:737 - Found 1-bit latch for signal <first_result<7>>. Latches may be
     Found 14-bit comparator lessequal for signal <n2168> created at line 168
     Found 14-bit comparator lessequal for signal <n2170> created at line 168
     Found 14-bit comparator lessequal for signal <n2172> created at line 168
-    Found 14-bit comparator lessequal for signal <n2174> created at line 168
-    Found 14-bit comparator lessequal for signal <n2176> created at line 168
-    Found 14-bit comparator lessequal for signal <n2178> created at line 168
-    Found 14-bit comparator lessequal for signal <n2180> created at line 168
-    Found 14-bit comparator lessequal for signal <n2182> created at line 168
-    Found 14-bit comparator lessequal for signal <n2184> created at line 168
-    Found 14-bit comparator lessequal for signal <n2186> created at line 168
-    Found 14-bit comparator lessequal for signal <n2188> created at line 168
-    Found 14-bit comparator lessequal for signal <n2190> created at line 168
-    Found 14-bit comparator lessequal for signal <n2192> created at line 168
-    Found 14-bit comparator lessequal for signal <n2194> created at line 168
-    Found 14-bit comparator lessequal for signal <n2196> created at line 168
-    Found 14-bit comparator lessequal for signal <n2198> created at line 168
-    Found 14-bit comparator lessequal for signal <n2200> created at line 168
-    Found 15-bit comparator lessequal for signal <n2202> created at line 168
-    Found 15-bit comparator lessequal for signal <n2204> created at line 168
-    Found 15-bit comparator lessequal for signal <n2206> created at line 168
-    Found 15-bit comparator lessequal for signal <n2208> created at line 168
-    Found 15-bit comparator lessequal for signal <n2210> created at line 168
-    Found 15-bit comparator lessequal for signal <n2212> created at line 168
-    Found 15-bit comparator lessequal for signal <n2214> created at line 168
-    Found 15-bit comparator lessequal for signal <n2216> created at line 168
-    Found 15-bit comparator lessequal for signal <n2218> created at line 168
-    Found 15-bit comparator lessequal for signal <n2222> created at line 168
+    Found 15-bit comparator lessequal for signal <n2174> created at line 168
+    Found 15-bit comparator lessequal for signal <n2176> created at line 168
+    Found 15-bit comparator lessequal for signal <n2178> created at line 168
+    Found 15-bit comparator lessequal for signal <n2180> created at line 168
+    Found 15-bit comparator lessequal for signal <n2182> created at line 168
+    Found 15-bit comparator lessequal for signal <n2184> created at line 168
+    Found 15-bit comparator lessequal for signal <n2186> created at line 168
+    Found 15-bit comparator lessequal for signal <n2188> created at line 168
+    Found 15-bit comparator lessequal for signal <n2190> created at line 168
+    Found 15-bit comparator lessequal for signal <n2192> created at line 168
     Summary:
-	inferred   9 Adder/Subtractor(s).
+	inferred   6 Adder/Subtractor(s).
 	inferred  24 Latch(s).
-	inferred 327 Comparator(s).
+	inferred 312 Comparator(s).
 	inferred 1896 Multiplexer(s).
 Unit <alu> synthesized.
 
@@ -559,7 +541,7 @@ Unit <div_8s_8s> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 66
+# Adders/Subtractors                                   : 63
  10-bit adder                                          : 6
  11-bit adder                                          : 6
  12-bit adder                                          : 6
@@ -567,15 +549,14 @@ Macro Statistics
  14-bit adder                                          : 6
  15-bit adder                                          : 6
  16-bit adder                                          : 6
- 7-bit adder                                           : 3
  8-bit adder                                           : 3
  8-bit subtractor                                      : 9
  9-bit adder                                           : 9
 # Latches                                              : 24
  1-bit latch                                           : 24
-# Comparators                                          : 354
+# Comparators                                          : 339
  10-bit comparator greater                             : 6
- 10-bit comparator lessequal                           : 21
+ 10-bit comparator lessequal                           : 18
  11-bit comparator greater                             : 3
  11-bit comparator lessequal                           : 27
  12-bit comparator greater                             : 3
@@ -587,8 +568,8 @@ Macro Statistics
  15-bit comparator greater                             : 3
  15-bit comparator lessequal                           : 30
  16-bit comparator greater                             : 3
- 8-bit comparator greater                              : 27
- 8-bit comparator lessequal                            : 30
+ 8-bit comparator greater                              : 24
+ 8-bit comparator lessequal                            : 21
  9-bit comparator greater                              : 6
  9-bit comparator lessequal                            : 12
 # Multiplexers                                         : 2076
@@ -610,15 +591,14 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 42
- 7-bit adder                                           : 3
+# Adders/Subtractors                                   : 39
  8-bit adder                                           : 3
  8-bit adder carry in                                  : 24
  8-bit subtractor                                      : 9
  9-bit adder                                           : 3
-# Comparators                                          : 354
+# Comparators                                          : 339
  10-bit comparator greater                             : 6
- 10-bit comparator lessequal                           : 21
+ 10-bit comparator lessequal                           : 18
  11-bit comparator greater                             : 3
  11-bit comparator lessequal                           : 27
  12-bit comparator greater                             : 3
@@ -630,8 +610,8 @@ Macro Statistics
  15-bit comparator greater                             : 3
  15-bit comparator lessequal                           : 30
  16-bit comparator greater                             : 3
- 8-bit comparator greater                              : 27
- 8-bit comparator lessequal                            : 30
+ 8-bit comparator greater                              : 24
+ 8-bit comparator lessequal                            : 21
  9-bit comparator greater                              : 6
  9-bit comparator lessequal                            : 12
 # Multiplexers                                         : 2073
@@ -683,13 +663,13 @@ Top Level Output File Name         : alu.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 591
+# BELS                             : 629
 #      GND                         : 1
-#      LUT2                        : 63
-#      LUT3                        : 31
-#      LUT4                        : 52
-#      LUT5                        : 91
-#      LUT6                        : 180
+#      LUT2                        : 60
+#      LUT3                        : 40
+#      LUT4                        : 63
+#      LUT5                        : 89
+#      LUT6                        : 203
 #      MUXCY                       : 75
 #      MUXF7                       : 10
 #      VCC                         : 1
@@ -708,14 +688,14 @@ Selected Device : 7a100tcsg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:              16  out of  126800     0%  
- Number of Slice LUTs:                  417  out of  63400     0%  
-    Number used as Logic:               417  out of  63400     0%  
+ Number of Slice LUTs:                  455  out of  63400     0%  
+    Number used as Logic:               455  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    417
-   Number with an unused Flip Flop:     401  out of    417    96%  
-   Number with an unused LUT:             0  out of    417     0%  
-   Number of fully used LUT-FF pairs:    16  out of    417     3%  
+ Number of LUT Flip Flop pairs used:    455
+   Number with an unused Flip Flop:     439  out of    455    96%  
+   Number with an unused LUT:             0  out of    455     0%  
+   Number of fully used LUT-FF pairs:    16  out of    455     3%  
    Number of unique control sets:         3
 
 IO Utilization: 
@@ -743,13 +723,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------------------------+-------------------------+-------+
-Clock Signal                                           | Clock buffer(FF name)   | Load  |
--------------------------------------------------------+-------------------------+-------+
-GND_4_o_GND_4_o_OR_222_o(GND_4_o_GND_4_o_OR_222_o1:O)  | NONE(*)(first_result_7) | 8     |
-GND_4_o_GND_4_o_OR_1872_o(GND_4_o_GND_4_o_OR_1872_o1:O)| NONE(*)(output_7)       | 8     |
-GND_4_o_GND_4_o_OR_992_o(GND_4_o_GND_4_o_OR_992_o1:O)  | NONE(*)(second_result_7)| 8     |
--------------------------------------------------------+-------------------------+-------+
+------------------------------------------------------+-------------------------+-------+
+Clock Signal                                          | Clock buffer(FF name)   | Load  |
+------------------------------------------------------+-------------------------+-------+
+GND_4_o_GND_4_o_OR_222_o(GND_4_o_GND_4_o_OR_222_o:O)  | NONE(*)(first_result_7) | 8     |
+GND_4_o_GND_4_o_OR_1872_o(GND_4_o_GND_4_o_OR_1872_o:O)| NONE(*)(output_7)       | 8     |
+GND_4_o_GND_4_o_OR_992_o(GND_4_o_GND_4_o_OR_992_o:O)  | NONE(*)(second_result_7)| 8     |
+------------------------------------------------------+-------------------------+-------+
 (*) These 3 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -764,7 +744,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 20.608ns
+   Minimum input arrival time before clock: 20.632ns
    Maximum output required time after clock: 0.751ns
    Maximum combinational path delay: No path found
 
@@ -774,9 +754,9 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_4_o_GND_4_o_OR_222_o'
-  Total number of paths / destination ports: 94006548 / 8
+  Total number of paths / destination ports: 93255867 / 8
 -------------------------------------------------------------------------
-Offset:              20.605ns (Levels of Logic = 32)
+Offset:              20.632ns (Levels of Logic = 32)
   Source:            input<20> (PAD)
   Destination:       first_result_7 (LATCH)
   Destination Clock: GND_4_o_GND_4_o_OR_222_o falling
@@ -785,70 +765,70 @@ Offset:              20.605ns (Levels of Logic = 32)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   0.001   0.739  input_20_IBUF (Madd_second_num[7]_GND_4_o_add_232_OUT_lut<3>)
+     IBUF:I->O            19   0.001   0.767  input_20_IBUF (input_20_IBUF)
      LUT5:I0->O            9   0.097   0.332  first_num[7]_second_num[7]_div_13/Msub_b[7]_unary_minus_3_OUT_cy<4>11 (first_num[7]_second_num[7]_div_13/Msub_b[7]_unary_minus_3_OUT_cy<4>)
      LUT4:I3->O            3   0.097   0.693  first_num[7]_second_num[7]_div_13/Mmux_b[7]_b[7]_mux_3_OUT81 (first_num[7]_second_num[7]_div_13/b[7]_b[7]_mux_3_OUT<7>)
      LUT6:I1->O            3   0.097   0.566  first_num[7]_second_num[7]_div_13/Mmux_a[7]_GND_5_o_MUX_63_o11 (first_num[7]_second_num[7]_div_13/a[7]_GND_5_o_MUX_63_o)
      LUT6:I2->O            3   0.097   0.521  first_num[7]_second_num[7]_div_13/Mmux_a[7]_GND_5_o_MUX_91_o111 (first_num[7]_second_num[7]_div_13/a[7]_GND_5_o_MUX_92_o)
-     LUT5:I2->O            1   0.097   0.556  first_num[7]_second_num[7]_div_13/BUS_0004_INV_141_o1_SW0 (N50)
+     LUT5:I2->O            1   0.097   0.556  first_num[7]_second_num[7]_div_13/BUS_0004_INV_141_o1_SW0 (N44)
      LUT6:I2->O            6   0.097   0.716  first_num[7]_second_num[7]_div_13/BUS_0004_INV_141_o1 (first_num[7]_second_num[7]_div_13/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<5>)
      LUT6:I0->O            3   0.097   0.703  first_num[7]_second_num[7]_div_13/Mmux_a[7]_GND_5_o_MUX_117_o111 (first_num[7]_second_num[7]_div_13/a[7]_GND_5_o_MUX_118_o)
-     LUT6:I0->O            2   0.097   0.516  first_num[7]_second_num[7]_div_13/BUS_0005_INV_140_o1_SW0 (N52)
+     LUT6:I0->O            2   0.097   0.516  first_num[7]_second_num[7]_div_13/BUS_0005_INV_140_o1_SW0 (N46)
      LUT5:I2->O            6   0.097   0.716  first_num[7]_second_num[7]_div_13/BUS_0005_INV_140_o1 (first_num[7]_second_num[7]_div_13/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<4>)
      LUT6:I0->O            3   0.097   0.703  first_num[7]_second_num[7]_div_13/Mmux_a[7]_GND_5_o_MUX_141_o121 (first_num[7]_second_num[7]_div_13/a[7]_GND_5_o_MUX_143_o)
      LUT6:I0->O            1   0.097   0.379  first_num[7]_second_num[7]_div_13/BUS_0006_INV_139_o2 (first_num[7]_second_num[7]_div_13/BUS_0006_INV_139_o1)
      LUT6:I4->O           15   0.097   0.758  first_num[7]_second_num[7]_div_13/BUS_0006_INV_139_o11 (first_num[7]_second_num[7]_div_13/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<3>)
      LUT6:I0->O            3   0.097   0.703  first_num[7]_second_num[7]_div_13/Mmux_a[7]_GND_5_o_MUX_163_o131 (first_num[7]_second_num[7]_div_13/a[7]_GND_5_o_MUX_166_o)
      LUT6:I0->O            1   0.097   0.511  first_num[7]_second_num[7]_div_13/BUS_0007_INV_138_o1 (first_num[7]_second_num[7]_div_13/BUS_0007_INV_138_o1)
-     LUT5:I2->O            1   0.097   0.511  first_num[7]_second_num[7]_div_13/BUS_0007_INV_138_o23_SW0 (N76)
+     LUT5:I2->O            1   0.097   0.511  first_num[7]_second_num[7]_div_13/BUS_0007_INV_138_o23_SW0 (N64)
      LUT5:I2->O           20   0.097   0.771  first_num[7]_second_num[7]_div_13/BUS_0007_INV_138_o23 (first_num[7]_second_num[7]_div_13/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<2>)
      LUT5:I0->O            1   0.097   0.693  first_num[7]_second_num[7]_div_13/Mmux_a[7]_GND_5_o_MUX_183_o141 (first_num[7]_second_num[7]_div_13/a[7]_GND_5_o_MUX_187_o)
      LUT6:I0->O            1   0.097   0.379  first_num[7]_second_num[7]_div_13/BUS_0008_INV_137_o2 (first_num[7]_second_num[7]_div_13/BUS_0008_INV_137_o1)
-     LUT3:I1->O            1   0.097   0.511  first_num[7]_second_num[7]_div_13/BUS_0008_INV_137_o1_SW2 (N74)
+     LUT3:I1->O            1   0.097   0.511  first_num[7]_second_num[7]_div_13/BUS_0008_INV_137_o1_SW2 (N62)
      LUT5:I2->O            1   0.097   0.683  first_num[7]_second_num[7]_div_13/BUS_0008_INV_137_o1 (first_num[7]_second_num[7]_div_13/BUS_0008_INV_137_o2)
      LUT6:I1->O           12   0.097   0.744  first_num[7]_second_num[7]_div_13/BUS_0008_INV_137_o21 (first_num[7]_second_num[7]_div_13/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<1>)
-     LUT6:I0->O            1   0.097   0.683  first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o4_SW0 (N84)
+     LUT6:I0->O            1   0.097   0.683  first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o4_SW0 (N70)
      LUT5:I0->O            1   0.097   0.295  first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o4 (first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o4)
      LUT6:I5->O            2   0.097   0.516  first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o6 (first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o1)
-     LUT6:I3->O            1   0.097   0.000  first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o1_F (N104)
+     LUT6:I3->O            1   0.097   0.000  first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o1_F (N100)
      MUXF7:I0->O           2   0.277   0.697  first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o1 (first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o2)
-     LUT6:I0->O            1   0.097   0.295  first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o21 (first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o21)
-     LUT5:I4->O            6   0.097   0.318  first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o23 (first_num[7]_second_num[7]_div_13/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_cy<0>)
+     LUT6:I0->O            2   0.097   0.300  first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o21 (first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o21)
+     LUT5:I4->O            5   0.097   0.314  first_num[7]_second_num[7]_div_13/BUS_0009_INV_136_o23 (first_num[7]_second_num[7]_div_13/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_cy<0>)
      LUT5:I4->O            3   0.097   0.521  first_num[7]_second_num[7]_div_13/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_cy<4>11 (first_num[7]_second_num[7]_div_13/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_cy<4>)
-     LUT6:I3->O            1   0.097   0.683  first_result[7]_first_num[7]_MUX_350_o3 (first_result[7]_first_num[7]_MUX_350_o2)
-     LUT6:I1->O            1   0.097   0.000  first_result[7]_first_num[7]_MUX_350_o4 (first_result[7]_first_num[7]_MUX_350_o)
+     LUT6:I3->O            1   0.097   0.683  Mmux_first_result[7]_first_num[7]_MUX_1052_o232 (Mmux_first_result[7]_first_num[7]_MUX_1052_o231)
+     LUT6:I1->O            1   0.097   0.000  Mmux_first_result[7]_first_num[7]_MUX_1052_o233 (first_result[7]_first_num[7]_MUX_350_o)
      LD:D                     -0.028          first_result_7
     ----------------------------------------
-    Total                     20.605ns (3.188ns logic, 17.417ns route)
+    Total                     20.632ns (3.188ns logic, 17.444ns route)
                                        (15.5% logic, 84.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_4_o_GND_4_o_OR_1872_o'
-  Total number of paths / destination ports: 49 / 8
+  Total number of paths / destination ports: 38 / 8
 -------------------------------------------------------------------------
-Offset:              1.535ns (Levels of Logic = 4)
+Offset:              1.531ns (Levels of Logic = 4)
   Source:            input<36> (PAD)
-  Destination:       output_2 (LATCH)
+  Destination:       output_1 (LATCH)
   Destination Clock: GND_4_o_GND_4_o_OR_1872_o falling
 
-  Data Path: input<36> to output_2
+  Data Path: input<36> to output_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            17   0.001   0.768  input_36_IBUF (input_36_IBUF)
-     LUT6:I0->O            1   0.097   0.295  output[7]_first_result[7]_MUX_2807_o4 (output[7]_first_result[7]_MUX_2807_o4)
-     LUT5:I4->O            1   0.097   0.000  output[7]_first_result[7]_MUX_2807_o6_F (N96)
-     MUXF7:I0->O           1   0.277   0.000  output[7]_first_result[7]_MUX_2807_o6 (output[7]_first_result[7]_MUX_2807_o)
-     LD:D                     -0.028          output_2
+     IBUF:I->O            16   0.001   0.762  input_36_IBUF (input_36_IBUF)
+     LUT6:I0->O            1   0.097   0.000  Mmux_output[7]_first_result[7]_MUX_2222_o1123_G (N93)
+     MUXF7:I1->O           1   0.279   0.295  Mmux_output[7]_first_result[7]_MUX_2222_o1123 (Mmux_output[7]_first_result[7]_MUX_2222_o1122)
+     LUT6:I5->O            1   0.097   0.000  Mmux_output[7]_first_result[7]_MUX_2222_o1124 (output[7]_first_result[7]_MUX_2924_o)
+     LD:D                     -0.028          output_1
     ----------------------------------------
-    Total                      1.535ns (0.472ns logic, 1.063ns route)
-                                       (30.8% logic, 69.2% route)
+    Total                      1.531ns (0.474ns logic, 1.057ns route)
+                                       (31.0% logic, 69.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GND_4_o_GND_4_o_OR_992_o'
-  Total number of paths / destination ports: 92471293 / 8
+  Total number of paths / destination ports: 92471402 / 8
 -------------------------------------------------------------------------
-Offset:              20.608ns (Levels of Logic = 32)
+Offset:              20.631ns (Levels of Logic = 32)
   Source:            input<4> (PAD)
   Destination:       second_result_7 (LATCH)
   Destination Clock: GND_4_o_GND_4_o_OR_992_o falling
@@ -857,41 +837,41 @@ Offset:              20.608ns (Levels of Logic = 32)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            13   0.001   0.739  input_4_IBUF (Madd_forth_num[7]_GND_4_o_add_683_OUT_lut<3>)
-     LUT5:I0->O           10   0.097   0.337  third_num[7]_forth_num[7]_div_356/Msub_b[7]_unary_minus_3_OUT_cy<4>11 (third_num[7]_forth_num[7]_div_356/Msub_b[7]_unary_minus_3_OUT_cy<4>)
-     LUT4:I3->O            4   0.097   0.697  third_num[7]_forth_num[7]_div_356/Mmux_b[7]_b[7]_mux_3_OUT81 (third_num[7]_forth_num[7]_div_356/b[7]_b[7]_mux_3_OUT<7>)
-     LUT6:I1->O            3   0.097   0.566  third_num[7]_forth_num[7]_div_356/Mmux_a[7]_GND_5_o_MUX_63_o11 (third_num[7]_forth_num[7]_div_356/a[7]_GND_5_o_MUX_63_o)
-     LUT6:I2->O            3   0.097   0.521  third_num[7]_forth_num[7]_div_356/Mmux_a[7]_GND_5_o_MUX_91_o111 (third_num[7]_forth_num[7]_div_356/a[7]_GND_5_o_MUX_92_o)
-     LUT5:I2->O            1   0.097   0.556  third_num[7]_forth_num[7]_div_356/BUS_0004_INV_141_o1_SW0 (N36)
-     LUT6:I2->O            6   0.097   0.716  third_num[7]_forth_num[7]_div_356/BUS_0004_INV_141_o1 (third_num[7]_forth_num[7]_div_356/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<5>)
-     LUT6:I0->O            3   0.097   0.703  third_num[7]_forth_num[7]_div_356/Mmux_a[7]_GND_5_o_MUX_117_o111 (third_num[7]_forth_num[7]_div_356/a[7]_GND_5_o_MUX_118_o)
-     LUT6:I0->O            2   0.097   0.516  third_num[7]_forth_num[7]_div_356/BUS_0005_INV_140_o1_SW0 (N38)
-     LUT5:I2->O            6   0.097   0.716  third_num[7]_forth_num[7]_div_356/BUS_0005_INV_140_o1 (third_num[7]_forth_num[7]_div_356/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<4>)
-     LUT6:I0->O            3   0.097   0.703  third_num[7]_forth_num[7]_div_356/Mmux_a[7]_GND_5_o_MUX_141_o121 (third_num[7]_forth_num[7]_div_356/a[7]_GND_5_o_MUX_143_o)
-     LUT6:I0->O            1   0.097   0.379  third_num[7]_forth_num[7]_div_356/BUS_0006_INV_139_o2 (third_num[7]_forth_num[7]_div_356/BUS_0006_INV_139_o1)
-     LUT6:I4->O           15   0.097   0.758  third_num[7]_forth_num[7]_div_356/BUS_0006_INV_139_o11 (third_num[7]_forth_num[7]_div_356/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<3>)
-     LUT6:I0->O            3   0.097   0.703  third_num[7]_forth_num[7]_div_356/Mmux_a[7]_GND_5_o_MUX_163_o131 (third_num[7]_forth_num[7]_div_356/a[7]_GND_5_o_MUX_166_o)
-     LUT6:I0->O            1   0.097   0.511  third_num[7]_forth_num[7]_div_356/BUS_0007_INV_138_o1 (third_num[7]_forth_num[7]_div_356/BUS_0007_INV_138_o1)
-     LUT5:I2->O            2   0.097   0.516  third_num[7]_forth_num[7]_div_356/BUS_0007_INV_138_o23_SW0 (N72)
-     LUT5:I2->O           18   0.097   0.762  third_num[7]_forth_num[7]_div_356/BUS_0007_INV_138_o23 (third_num[7]_forth_num[7]_div_356/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<2>)
-     LUT5:I0->O            1   0.097   0.693  third_num[7]_forth_num[7]_div_356/Mmux_a[7]_GND_5_o_MUX_183_o141 (third_num[7]_forth_num[7]_div_356/a[7]_GND_5_o_MUX_187_o)
-     LUT6:I0->O            1   0.097   0.379  third_num[7]_forth_num[7]_div_356/BUS_0008_INV_137_o2 (third_num[7]_forth_num[7]_div_356/BUS_0008_INV_137_o1)
-     LUT3:I1->O            1   0.097   0.511  third_num[7]_forth_num[7]_div_356/BUS_0008_INV_137_o1_SW2 (N70)
-     LUT5:I2->O            1   0.097   0.683  third_num[7]_forth_num[7]_div_356/BUS_0008_INV_137_o1 (third_num[7]_forth_num[7]_div_356/BUS_0008_INV_137_o2)
-     LUT6:I1->O           12   0.097   0.744  third_num[7]_forth_num[7]_div_356/BUS_0008_INV_137_o21 (third_num[7]_forth_num[7]_div_356/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<1>)
-     LUT6:I0->O            1   0.097   0.683  third_num[7]_forth_num[7]_div_356/BUS_0009_INV_136_o4_SW0 (N82)
-     LUT5:I0->O            1   0.097   0.295  third_num[7]_forth_num[7]_div_356/BUS_0009_INV_136_o4 (third_num[7]_forth_num[7]_div_356/BUS_0009_INV_136_o4)
-     LUT6:I5->O            2   0.097   0.516  third_num[7]_forth_num[7]_div_356/BUS_0009_INV_136_o6 (third_num[7]_forth_num[7]_div_356/BUS_0009_INV_136_o1)
-     LUT6:I3->O            1   0.097   0.000  third_num[7]_forth_num[7]_div_356/BUS_0009_INV_136_o1_F (N102)
-     MUXF7:I0->O           2   0.277   0.697  third_num[7]_forth_num[7]_div_356/BUS_0009_INV_136_o1 (third_num[7]_forth_num[7]_div_356/BUS_0009_INV_136_o2)
-     LUT6:I0->O            1   0.097   0.295  third_num[7]_forth_num[7]_div_356/BUS_0009_INV_136_o21 (third_num[7]_forth_num[7]_div_356/BUS_0009_INV_136_o21)
-     LUT5:I4->O            6   0.097   0.318  third_num[7]_forth_num[7]_div_356/BUS_0009_INV_136_o23 (third_num[7]_forth_num[7]_div_356/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_cy<0>)
-     LUT5:I4->O            3   0.097   0.521  third_num[7]_forth_num[7]_div_356/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_cy<4>11 (third_num[7]_forth_num[7]_div_356/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_cy<4>)
-     LUT6:I3->O            1   0.097   0.683  second_result[7]_third_num[7]_MUX_1286_o3 (second_result[7]_third_num[7]_MUX_1286_o2)
-     LUT6:I1->O            1   0.097   0.000  second_result[7]_third_num[7]_MUX_1286_o4 (second_result[7]_third_num[7]_MUX_1286_o)
+     IBUF:I->O            18   0.001   0.762  input_4_IBUF (input_4_IBUF)
+     LUT5:I0->O           10   0.097   0.337  third_num[7]_forth_num[7]_div_256/Msub_b[7]_unary_minus_3_OUT_cy<4>11 (third_num[7]_forth_num[7]_div_256/Msub_b[7]_unary_minus_3_OUT_cy<4>)
+     LUT4:I3->O            4   0.097   0.697  third_num[7]_forth_num[7]_div_256/Mmux_b[7]_b[7]_mux_3_OUT81 (third_num[7]_forth_num[7]_div_256/b[7]_b[7]_mux_3_OUT<7>)
+     LUT6:I1->O            3   0.097   0.566  third_num[7]_forth_num[7]_div_256/Mmux_a[7]_GND_5_o_MUX_63_o11 (third_num[7]_forth_num[7]_div_256/a[7]_GND_5_o_MUX_63_o)
+     LUT6:I2->O            3   0.097   0.521  third_num[7]_forth_num[7]_div_256/Mmux_a[7]_GND_5_o_MUX_91_o111 (third_num[7]_forth_num[7]_div_256/a[7]_GND_5_o_MUX_92_o)
+     LUT5:I2->O            1   0.097   0.556  third_num[7]_forth_num[7]_div_256/BUS_0004_INV_141_o1_SW0 (N30)
+     LUT6:I2->O            6   0.097   0.716  third_num[7]_forth_num[7]_div_256/BUS_0004_INV_141_o1 (third_num[7]_forth_num[7]_div_256/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<5>)
+     LUT6:I0->O            3   0.097   0.703  third_num[7]_forth_num[7]_div_256/Mmux_a[7]_GND_5_o_MUX_117_o111 (third_num[7]_forth_num[7]_div_256/a[7]_GND_5_o_MUX_118_o)
+     LUT6:I0->O            2   0.097   0.516  third_num[7]_forth_num[7]_div_256/BUS_0005_INV_140_o1_SW0 (N32)
+     LUT5:I2->O            6   0.097   0.716  third_num[7]_forth_num[7]_div_256/BUS_0005_INV_140_o1 (third_num[7]_forth_num[7]_div_256/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<4>)
+     LUT6:I0->O            3   0.097   0.703  third_num[7]_forth_num[7]_div_256/Mmux_a[7]_GND_5_o_MUX_141_o121 (third_num[7]_forth_num[7]_div_256/a[7]_GND_5_o_MUX_143_o)
+     LUT6:I0->O            1   0.097   0.379  third_num[7]_forth_num[7]_div_256/BUS_0006_INV_139_o2 (third_num[7]_forth_num[7]_div_256/BUS_0006_INV_139_o1)
+     LUT6:I4->O           15   0.097   0.758  third_num[7]_forth_num[7]_div_256/BUS_0006_INV_139_o11 (third_num[7]_forth_num[7]_div_256/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<3>)
+     LUT6:I0->O            3   0.097   0.703  third_num[7]_forth_num[7]_div_256/Mmux_a[7]_GND_5_o_MUX_163_o131 (third_num[7]_forth_num[7]_div_256/a[7]_GND_5_o_MUX_166_o)
+     LUT6:I0->O            1   0.097   0.511  third_num[7]_forth_num[7]_div_256/BUS_0007_INV_138_o1 (third_num[7]_forth_num[7]_div_256/BUS_0007_INV_138_o1)
+     LUT5:I2->O            2   0.097   0.516  third_num[7]_forth_num[7]_div_256/BUS_0007_INV_138_o23_SW0 (N60)
+     LUT5:I2->O           18   0.097   0.762  third_num[7]_forth_num[7]_div_256/BUS_0007_INV_138_o23 (third_num[7]_forth_num[7]_div_256/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<2>)
+     LUT5:I0->O            1   0.097   0.693  third_num[7]_forth_num[7]_div_256/Mmux_a[7]_GND_5_o_MUX_183_o141 (third_num[7]_forth_num[7]_div_256/a[7]_GND_5_o_MUX_187_o)
+     LUT6:I0->O            1   0.097   0.379  third_num[7]_forth_num[7]_div_256/BUS_0008_INV_137_o2 (third_num[7]_forth_num[7]_div_256/BUS_0008_INV_137_o1)
+     LUT3:I1->O            1   0.097   0.511  third_num[7]_forth_num[7]_div_256/BUS_0008_INV_137_o1_SW2 (N58)
+     LUT5:I2->O            1   0.097   0.683  third_num[7]_forth_num[7]_div_256/BUS_0008_INV_137_o1 (third_num[7]_forth_num[7]_div_256/BUS_0008_INV_137_o2)
+     LUT6:I1->O           12   0.097   0.744  third_num[7]_forth_num[7]_div_256/BUS_0008_INV_137_o21 (third_num[7]_forth_num[7]_div_256/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_lut<1>)
+     LUT6:I0->O            1   0.097   0.683  third_num[7]_forth_num[7]_div_256/BUS_0009_INV_136_o4_SW0 (N68)
+     LUT5:I0->O            1   0.097   0.295  third_num[7]_forth_num[7]_div_256/BUS_0009_INV_136_o4 (third_num[7]_forth_num[7]_div_256/BUS_0009_INV_136_o4)
+     LUT6:I5->O            2   0.097   0.516  third_num[7]_forth_num[7]_div_256/BUS_0009_INV_136_o6 (third_num[7]_forth_num[7]_div_256/BUS_0009_INV_136_o1)
+     LUT6:I3->O            1   0.097   0.000  third_num[7]_forth_num[7]_div_256/BUS_0009_INV_136_o1_F (N96)
+     MUXF7:I0->O           2   0.277   0.697  third_num[7]_forth_num[7]_div_256/BUS_0009_INV_136_o1 (third_num[7]_forth_num[7]_div_256/BUS_0009_INV_136_o2)
+     LUT6:I0->O            1   0.097   0.295  third_num[7]_forth_num[7]_div_256/BUS_0009_INV_136_o21 (third_num[7]_forth_num[7]_div_256/BUS_0009_INV_136_o21)
+     LUT5:I4->O            6   0.097   0.318  third_num[7]_forth_num[7]_div_256/BUS_0009_INV_136_o23 (third_num[7]_forth_num[7]_div_256/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_cy<0>)
+     LUT5:I4->O            3   0.097   0.521  third_num[7]_forth_num[7]_div_256/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_cy<4>11 (third_num[7]_forth_num[7]_div_256/Madd_GND_5_o_BUS_0001_add_22_OUT[8:0]_cy<4>)
+     LUT6:I3->O            1   0.097   0.683  Mmux_second_result[7]_third_num[7]_MUX_1286_o12 (Mmux_second_result[7]_third_num[7]_MUX_1286_o11)
+     LUT6:I1->O            1   0.097   0.000  Mmux_second_result[7]_third_num[7]_MUX_1286_o13 (second_result[7]_third_num[7]_MUX_1286_o)
      LD:D                     -0.028          second_result_7
     ----------------------------------------
-    Total                     20.608ns (3.188ns logic, 17.420ns route)
+    Total                     20.631ns (3.188ns logic, 17.443ns route)
                                        (15.5% logic, 84.5% route)
 
 =========================================================================
@@ -923,19 +903,19 @@ Clock to Setup on destination clock GND_4_o_GND_4_o_OR_1872_o
                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------+---------+---------+---------+---------+
-GND_4_o_GND_4_o_OR_222_o|         |         |   19.776|         |
-GND_4_o_GND_4_o_OR_992_o|         |         |   19.806|         |
+GND_4_o_GND_4_o_OR_222_o|         |         |   19.772|         |
+GND_4_o_GND_4_o_OR_992_o|         |         |   19.829|         |
 ------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 16.73 secs
+Total CPU time to Xst completion: 17.01 secs
  
 --> 
 
-Total memory usage is 427660 kilobytes
+Total memory usage is 427676 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   31 (   0 filtered)

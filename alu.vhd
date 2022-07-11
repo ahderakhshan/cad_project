@@ -75,7 +75,7 @@ process (first_operator,second_operator,third_operator,first_num,second_num,thir
 		elsif (first_operator="110") then
 			--jazr
 			for i in 1 to 100 loop
-				if ( i*i <= (signed(second_num)/2)) then
+				if ( i*i <= signed(second_num)) then
 					first_result<= std_logic_vector(to_signed(i,8));
 				end if;
 			end loop;
@@ -119,7 +119,7 @@ process (first_operator,second_operator,third_operator,first_num,second_num,thir
 		elsif (third_operator="110") then
 			--jazr
 			for j in 1 to 100 loop
-				if ( j*j <= (signed(forth_num)/2)) then
+				if ( j*j <= (signed(forth_num))) then
 					second_result<= std_logic_vector(to_signed(j,8));
 				end if;
 			end loop;
@@ -165,7 +165,7 @@ process (first_result,second_result) begin
 		elsif (second_operator="110") then
 			--jazr
 			for z in 1 to 100 loop
-				if ( z*z <= (signed(second_result)/2)) then
+				if ( z*z <= signed(second_result)) then
 					output<= std_logic_vector(to_signed(z,8));
 				end if;
 			end loop;

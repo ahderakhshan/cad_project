@@ -153,3 +153,6 @@ xst -intstyle ise -ifn "E:/cadproj/finall/alu.xst" -ofn "E:/cadproj/finall/alu.s
 xst -intstyle ise -ifn "E:/cadproj/finall/alu.xst" -ofn "E:/cadproj/finall/alu.syr" 
 xst -intstyle ise -ifn "E:/cadproj/finall/alu.xst" -ofn "E:/cadproj/finall/alu.syr" 
 xst -intstyle ise -ifn "E:/cadproj/finall/alu.xst" -ofn "E:/cadproj/finall/alu.syr" 
+xst -intstyle ise -ifn "E:/cadproj/finall/alu.xst" -ofn "E:/cadproj/finall/alu.syr" 
+xst -intstyle ise -ifn "E:/cadproj/finall/alu.xst" -ofn "E:/cadproj/finall/alu.syr" 
+xst -intstyle ise -ifn "E:/cadproj/finall/alu.xst" -ofn "E:/cadproj/finall/alu.syr" 
