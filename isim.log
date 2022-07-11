@@ -1,0 +1,16 @@
+ISim log file
+Running: E:\cadproj\finall\alu_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/cadproj/finall/alu_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /alu/input 00000000000000000000000000000000000000 -radix bin
+# isim force add /alu/input 00000000000000000000000000000000000000 -radix bin
+# run 1.00us
+# isim force add /alu/input 00001020304 -radix hex
+# isim force add /alu/input 00001020304 -radix hex
+# run 1.00us
