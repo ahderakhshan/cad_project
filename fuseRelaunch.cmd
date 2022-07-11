@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/cadproj/finall/alu_isim_beh.exe" -prj "E:/cadproj/finall/alu_beh.prj" "work.alu" 
