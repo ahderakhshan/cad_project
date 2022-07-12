@@ -52,9 +52,9 @@ process (input) begin
 			if (signed(second_num) = "00000000") then
 				temp <= "00000000000000000000000000000001";
 			else
-				temp <= std_logic_vector(signed(first_num));
+				temp(7 downto 0) <= std_logic_vector(signed(first_num));
 				for i in 2 to to_integer(signed(second_num)) loop
-					temp <= temp * signed(first_num);
+					temp <= std_logic_vector(signed(temp(7 downto 0)) * signed(first_num));
 				end loop;
 			end if;
 			first_result <= temp;
@@ -83,9 +83,9 @@ process (input) begin
 			if (signed(forth_num) = "00000000") then
 				temp <= "00000000000000000000000000000001";
 			else
-				temp <= std_logic_vector(signed(third_num));
+				temp(7 downto 0) <= std_logic_vector(signed(third_num));
 				for i in 2 to to_integer(signed(forth_num)) loop
-					temp <= temp * signed(third_num);
+					temp <= std_logic_vector(signed(temp(7 downto 0)) * signed(third_num));
 				end loop;
 			end if;
 			second_result <= temp;
@@ -114,9 +114,9 @@ process (input) begin
 			if (signed(second_result) = "00000000") then
 				temp <= "00000000000000000000000000000001";
 			else
-				temp <= std_logic_vector(signed(first_result));
+				temp(7 downto 0) <= std_logic_vector(signed(first_result));
 				for i in 2 to to_integer(signed(second_result)) loop
-					temp <= temp * signed(first_result);
+					temp <= std_logic_vector(signed(temp(7 downto 0)) * signed(first_result));
 				end loop;
 			end if;
 			output(31 downto 0) <= temp;
