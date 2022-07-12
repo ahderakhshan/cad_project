@@ -135,16 +135,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1657574491" xil_pn:in_ck="129639553330" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="8366374044894184594" xil_pn:start_ts="1657574472">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
+    <transform xil_pn:end_ts="1657381729" xil_pn:in_ck="129639553330" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="8366374044894184594" xil_pn:start_ts="1657381723">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="alu.lso"/>
       <outfile xil_pn:name="alu.ngc"/>
       <outfile xil_pn:name="alu.ngr"/>
       <outfile xil_pn:name="alu.prj"/>
-      <outfile xil_pn:name="alu.stx"/>
       <outfile xil_pn:name="alu.syr"/>
       <outfile xil_pn:name="alu.xst"/>
       <outfile xil_pn:name="alu_beh.prj"/>

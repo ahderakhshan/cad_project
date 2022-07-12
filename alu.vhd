@@ -22,7 +22,12 @@ signal third_num : std_logic_vector (7 downto 0);
 signal forth_num : std_logic_vector (7 downto 0);
 signal first_result: std_logic_vector (7 downto 0);
 signal second_result: std_logic_vector (7 downto 0);
-signal temp:std_logic_vector(7 downto 0);
+signal counter: std_logic_vector(7 downto 0):= "00000000";
+signal power_result_1:std_logic_vector(31 downto 0);
+signal power_result_2:std_logic_vector(45 downto 0);
+signal one:std_logic_vector(8 downto 0):="000000001";
+signal endd:std_logic_vector(8 downto 0):="010000000";
+signal temp: std_logic_vector(31 downto 0);
 begin
 
 process (input) begin
@@ -50,7 +55,15 @@ process (first_operator,second_operator,third_operator,first_num,second_num,thir
 			--only power of 2 should be check
 		elsif (first_operator="100") then
 			--tavan
-			
+			if (signed(second_num) = "00000000") then
+				temp <= "00000000000000000000000000000001";
+			else
+				temp(7 downto 0) <= std_logic_vector(signed(first_num));
+				for i in 2 to to_integer(signed(second_num)) loop
+					temp <= std_logic_vector(signed(temp(7 downto 0)) * signed(first_num));
+				end loop;
+			end if;
+			first_result <= temp;
 		elsif (first_operator="101") then
 			--logaritm
 			if ( signed(second_num)<1) then
@@ -94,7 +107,15 @@ process (first_operator,second_operator,third_operator,first_num,second_num,thir
 			--only power of 2 should be check
 		elsif (third_operator="100") then
 			--power
-			
+			if (signed(forth_num) = "00000000") then
+				temp <= "00000000000000000000000000000001";
+			else
+				temp(7 downto 0) <= std_logic_vector(signed(third_num));
+				for i in 2 to to_integer(signed(forth_num)) loop
+					temp <= std_logic_vector(signed(temp(7 downto 0)) * signed(third_num));
+				end loop;
+			end if;
+			second_result <= temp;
 		elsif (third_operator="101") then
 			--logaritm
 			if ( signed(forth_num)<1) then
@@ -140,7 +161,15 @@ process (first_result,second_result) begin
 			--only power of 2 should be check
 		elsif (second_operator="100") then
 			--power
-			
+			if (signed(second_result) = "00000000") then
+				temp <= "00000000000000000000000000000001";
+			else
+				temp(7 downto 0) <= std_logic_vector(signed(first_result));
+				for i in 2 to to_integer(signed(second_result)) loop
+					temp <= std_logic_vector(signed(temp(7 downto 0)) * signed(first_result));
+				end loop;
+			end if;
+			output(31 downto 0) <= temp;
 		elsif (second_operator="101") then
 			--logaritm
 			if ( signed(second_result)<1) then

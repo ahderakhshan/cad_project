@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "E:\cadproj\finall\alu.vhd" into library work
+Parsing VHDL file "C:\Users\Hessam-PC\Desktop\CAD Project\cad_project\alu.vhd" into library work
 Parsing entity <alu>.
 Parsing architecture <Behavioral> of entity <alu>.
 
