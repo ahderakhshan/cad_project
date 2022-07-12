@@ -23,11 +23,12 @@ signal forth_num : std_logic_vector (7 downto 0);
 signal first_result: std_logic_vector (7 downto 0);
 signal second_result: std_logic_vector (7 downto 0);
 signal counter: std_logic_vector(7 downto 0):= "00000000";
-signal power_result_1:std_logic_vector(31 downto 0);
-signal power_result_2:std_logic_vector(45 downto 0);
-signal one:std_logic_vector(8 downto 0):="000000001";
-signal endd:std_logic_vector(8 downto 0):="010000000";
+signal power_result_1: std_logic_vector(31 downto 0);
+signal power_result_2: std_logic_vector(45 downto 0);
+signal one: std_logic_vector(8 downto 0):="000000001";
+signal endd: std_logic_vector(8 downto 0):="010000000";
 signal temp: std_logic_vector(31 downto 0);
+constant maxInteger: integer := 2147483647;
 begin
 
 process (input) begin
@@ -39,7 +40,8 @@ process (input) begin
 		third_num <= input(15 downto 8);
 		forth_num <= input(7 downto 0);
 end process;
-process (first_operator,second_operator,third_operator,first_num,second_num,third_num,forth_num) begin
+process (first_operator,second_operator,third_operator,first_num,second_num,third_num,forth_num) 
+	begin
 		-----------------------------------------
 		if (first_operator="000") then
 			--temp<= std_logic_vector(signed(first_num) + signed(second_num));
@@ -59,8 +61,11 @@ process (first_operator,second_operator,third_operator,first_num,second_num,thir
 				temp <= "00000000000000000000000000000001";
 			else
 				temp(7 downto 0) <= std_logic_vector(signed(first_num));
-				for i in 2 to to_integer(signed(second_num)) loop
-					temp <= std_logic_vector(signed(temp(7 downto 0)) * signed(first_num));
+				for i in 2 to maxInteger loop
+					temp(15 downto 0) <= std_logic_vector(signed(temp(7 downto 0)) * signed(first_num));
+					if (to_integer(signed(second_num)) = i) then
+						exit;
+					end if;
 				end loop;
 			end if;
 			first_result <= temp;
@@ -111,8 +116,11 @@ process (first_operator,second_operator,third_operator,first_num,second_num,thir
 				temp <= "00000000000000000000000000000001";
 			else
 				temp(7 downto 0) <= std_logic_vector(signed(third_num));
-				for i in 2 to to_integer(signed(forth_num)) loop
-					temp <= std_logic_vector(signed(temp(7 downto 0)) * signed(third_num));
+				for i in 2 to maxInteger loop
+					temp(15 downto 0) <= std_logic_vector(signed(temp(7 downto 0)) * signed(third_num));
+					if (to_integer(signed(forth_num)) = i) then
+						exit;
+					end if;
 				end loop;
 			end if;
 			second_result <= temp;
@@ -165,8 +173,11 @@ process (first_result,second_result) begin
 				temp <= "00000000000000000000000000000001";
 			else
 				temp(7 downto 0) <= std_logic_vector(signed(first_result));
-				for i in 2 to to_integer(signed(second_result)) loop
-					temp <= std_logic_vector(signed(temp(7 downto 0)) * signed(first_result));
+				for i in 2 to maxInteger loop
+					temp(15 downto 0) <= std_logic_vector(signed(temp(7 downto 0)) * signed(first_result));
+					if (to_integer(signed(second_result)) = i) then
+						exit;
+					end if;
 				end loop;
 			end if;
 			output(31 downto 0) <= temp;
